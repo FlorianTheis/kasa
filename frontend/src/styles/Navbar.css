@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 40px;
+}
+
+.header__home {
+  margin-left: 5px;
+}
+
+.header__S {
+  margin-left: 15px;
+}
+
+.header__A {
+  margin-left: 5px;
+}
+
+.header__porte {
+  margin-left: -15px;
+  margin-bottom: 5px;
+}
+
+.navBar {
+  left: 75.08%;
+  right: 0%;
+  top: 25%;
+  bottom: 25%;
+}
+
+.navBar__accueil {
+   color: #FF6060;
+  text-decoration: none;
+  margin-right: 57px;
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+}
+
+.navBar__Apropos {
+color: #FF6060;
+  text-decoration: none;
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+}
