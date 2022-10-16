@@ -3,6 +3,7 @@ import ImgBanner from '../../assets/Banner.png';
 
 function Banner() {
   return (
+    <header>
     <section className="section">
       <img
         src={ImgBanner}
@@ -13,6 +14,7 @@ function Banner() {
         <p>Chez vous, partout et ailleurs</p>
       </div>
     </section>
+    </header>
   );
 }
 

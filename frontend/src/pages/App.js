@@ -2,7 +2,7 @@ import Accueil from '../components/Accueil'; // import du fichier menu
 import A_propos from '../components/A_propos';
 import Navbar from '../components/header/Navbar';
 import Error from '../components/Error/error';
-import Banner from '../components/header/Banner';
+
 
 
 import { Routes, Route } from 'react-router-dom';

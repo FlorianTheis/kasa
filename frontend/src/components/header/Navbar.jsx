@@ -9,7 +9,7 @@ import Porte from '../../assets/Porte_home.png';
 function Navbar() {
   return (
     <nav>
-      <div className='header'>
+      <div className='header__nav'>
         <div>
           <img src={K} alt="lettre K" className='header__K'></img>
           <img src={home} alt="maison logo" className='header__home '></img>

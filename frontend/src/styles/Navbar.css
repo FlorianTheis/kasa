@@ -1,12 +1,16 @@
-.header {
+.header__nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1240px;
+  margin: 0 auto;
+
+}
+nav {
   margin-left: 100px;
   margin-right: 100px;
   margin-top: 40px;
 }
-
 .header__home {
   margin-left: 5px;
 }
