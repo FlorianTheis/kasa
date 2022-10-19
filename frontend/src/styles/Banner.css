@@ -1,5 +1,4 @@
 
-
 .section {
   position: absolute;
   width: 1240px;
@@ -7,9 +6,8 @@
   left: 100px;
   top: 171px;
   margin: 0 auto;
-  
- 
- 
+  border-radius: 25px;
+  border-radius: 25px;
 }
 
 .section__Banner {
@@ -17,10 +15,6 @@
   width: 100%;
   height: 223px;
   border-radius: 25px;
-  z-index: -1;
-  background-color: #595959;
-  background-blend-mode: overlay;
-  background-image: url(C:\Users\sydai\Documents\OCprojet7\frontend\src\assets\Banner.png);
 }
 
 .section__p {
@@ -35,4 +29,5 @@
   justify-content: space-around;
   align-items: center;
   position: relative;
+  z-index: 1;
 }

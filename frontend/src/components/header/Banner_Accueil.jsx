@@ -1,12 +1,12 @@
 import '../../../src/styles/Banner.css';
-import ImgBanner from '../../assets/Banner.png';
+import Banner_AC from '../../assets/Banner_Accueil.png';
 
-function Banner() {
+function Banner_Accueil() {
   return (
     <header>
     <section className="section">
       <img
-        src={ImgBanner}
+        src={Banner_AC}
         alt="paysage nature"
         className="section__Banner"
       ></img>
@@ -18,4 +18,7 @@ function Banner() {
   );
 }
 
-export default Banner;
+export default Banner_Accueil;
+
+
+// Ce fichier comprend le composant pour la bannière de la page d'accueil

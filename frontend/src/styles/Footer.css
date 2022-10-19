@@ -1,0 +1,34 @@
+.Footer {
+  position: relative;
+  width: 100%;
+  height: 209px;
+  top: 25em;
+  background: #000000;
+}
+
+.Footer_imgage_paragraphe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer__img {
+  margin-top: 66px;
+}
+
+.Footer__p {
+  position: absolute;
+  left: 32.15%;
+  right: 32.22%;
+  top: 64.11%;
+  bottom: 13.88%;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}

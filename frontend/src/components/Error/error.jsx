@@ -7,3 +7,5 @@ function Error() {
 }
 
 export default Error;
+
+// ce fichier comprend le composant pour la page ERROR 404 
