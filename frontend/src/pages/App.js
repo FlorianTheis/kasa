@@ -1,8 +1,10 @@
-import Accueil from '../components/Accueil'; // import du fichier menu
-import A_propos from '../components/A_propos';
-import Navbar from '../components/header/Navbar';
-import Error from '../components/Error/error';
-// import Footer from '../components/footer/footer';
+import Accueil from '../components/Accueil'; // import de la page d'accueil
+import A_propos from '../components/A_propos'; // page A Propos
+import Navbar from '../components/header/Navbar'; // de la navigation
+import Error from '../components/Error/error'; // de la page d'erreur
+import Footer from '../components/footer/footer'; // du footer
+import Fiche_Logement from '../components/Fiche_Logement'; //import du composant Fiche_logement
+
 
 
 
@@ -17,8 +19,9 @@ function App() {
         <Route exact path="/" element={<Accueil/>}/>
         <Route path="/Apropos" element={<A_propos />} />
         <Route path="*" element={<Error />} />
+        <Route path="/fiche_logement/:fiche_logementId" element={<Fiche_Logement />} />
       </Routes>
-      
+      <Footer />
       
     </>
   );
