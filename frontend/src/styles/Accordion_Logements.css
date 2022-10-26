@@ -1,4 +1,4 @@
-.accordion__title {
+.accordion__title__logement {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -10,6 +10,7 @@
     font-family: 'Montserrat';
     font-size: 24px;
     height: 15px;
+    width: 400px;
 }
 
 .accordion__title:hover,.active .accordion__title {
@@ -36,7 +37,7 @@
 }
 
 
-.accordion__content {
+.accordion__content__logement {
     visibility: hidden;
     height: auto;
     opacity: 0;
@@ -44,9 +45,11 @@
     padding: 0 1rem;
     transition: all .2s ease-in;
     margin-bottom: 10px;
+    width: 400px;
+    
 }
 
-.active .accordion__content {
+.active .accordion__content__logement {
     display: flex;
     align-items: center;
     visibility: visible;
@@ -67,7 +70,7 @@ main {
     margin: 0 auto;
 }
 
-.accordion.active img {
+.accordionL.active img {
     transform:rotate(180deg);
     transition: 0.3s;
 }

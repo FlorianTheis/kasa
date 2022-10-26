@@ -4,7 +4,7 @@ main {
   height: auto;
 }
 
-.Section {
+.Gallery {
   position: relative;
   width: 1240px;
   height: auto;
@@ -50,6 +50,7 @@ main {
 }
 
 .card__pictures {
+  height: 340px;
   width: 340px;
   border-radius: 10px;
   object-fit: cover;
