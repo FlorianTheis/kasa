@@ -1,22 +1,38 @@
-.each-slide img {
-    border-radius: 25px;
-    width: 100%;
-}
-
-.react-slideshow-wrapper {
-    margin: 100px 100px 30px 100px;
-    height: 400px;
+.slider {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
+    width: 1240px;
     border-radius: 25px;
+    top: 2rem;
+    margin: 0 auto;
+    margin-bottom: 5rem;
 }
 
-.images-wrap {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+.left-arrow {
+    position: absolute;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.right-arrow {
+    position: absolute;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.active .imageOfSlider {
+    border-radius: 20px;
+    height: 415px;
+    width: 1240px;
+    object-fit: cover;
 }

@@ -1,57 +1,64 @@
 import data from '../../backend/data.json'; // importation du fichier data.json
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import '../Caroussel/Caroussel.css';
+import VectorRight from '../../assets/Vector_Right.png';
+import VectorLeft from '../../assets/Vector_Left.png'
 
 console.log('data', data);
-const properties = {
-  duration: 50000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: true,
-  arrows: true,
-};
+
 
 function Caroussel() {
-  const { id } = useParams();
-  console.log('this.context:', id);
-  const [logement, setLogement] = useState({
-    tags: [],
-    equipments: [],
-    pictures: [],
-    rating: '',
-    host: { name: '', picture: '' },
-  });
-  console.log('useParams', useParams);
-  useEffect(() => {
-    data.map((house) => {
-      if (house.id === id) {
-        //console.log(house)
-        setLogement(house);
-      }
-      return null;
-    });
-  }, [id]);
+  const [logement, setLogement] = useState({ tags: [], equipments: [], pictures: [], rating: '', host: { 'name': '', 'picture': '' } })
+    const { id } = useParams()
+    
+    useEffect(() => {
+        data.map((house) => {
+            if (house.id === id) {
+                setLogement(house)
+            }
+            return null
+        })
+    }, [id])
 
-  console.log(logement);
 
-  return (
-    <div className="containerSlide">
-      {
-        <Slide {...properties}>
-          {logement.pictures.map((l, index) => (
-            <div className="each-slide">
-              <div className="slidePicture" key={l.id}>
-                <img src={logement.pictures[index]} alt="img" />
-              </div>
-            </div>
-          ))}
-        </Slide>
-      }
-    </div>
-  );
+////////////////////CURRENT-IMAGE////////////////////
+
+    const [current, setCurrent] = useState(0)
+    const length = logement.pictures.length
+
+    const nextSlide = () => {
+        setCurrent(current === length - 1 ? 0 : current +1)
+    }
+
+    const prevSlide = () => {
+        setCurrent(current === 0 ? length -1 : current -1)
+    }
+
+    if(logement.pictures.length <= 0) {
+        return null
+    }
+
+console.log(current)
+////////////////////RETURN////////////////////
+
+    return (
+        <div className='slider'>
+            <img src={VectorLeft} alt="flèche vers la droite" className='left-arrow' onClick={prevSlide}/>
+            <img src={VectorRight} alt="flèche vers la gauche"   className='right-arrow' onClick={nextSlide}/>
+        {logement.pictures.map((l, index) => {
+            return (
+                <div className={index === current ? 'slide active' : 'slide'} key={index}>
+                    {index === current && (
+                    <img src= {logement.pictures[index]} alt='img' className='imageOfSlider'/>
+                    )}
+                    
+                </div>
+            )
+        })}
+        </div>
+    )
 }
 
 export default Caroussel;
