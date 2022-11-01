@@ -5,13 +5,9 @@
   width: 1240px;
   margin: 0 auto;
   font-family: 'Montserrat';
+margin-top: 50px;
+}
 
-}
-nav {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 40px;
-}
 .header__home {
   margin-left: 5px;
 }

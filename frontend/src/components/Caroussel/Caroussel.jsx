@@ -1,6 +1,5 @@
 import data from '../../backend/data.json'; // importation du fichier data.json
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import 'react-slideshow-image/dist/styles.css';
 import '../Caroussel/Caroussel.css';
 import VectorRight from '../../assets/Vector_Right.png';
@@ -9,18 +8,8 @@ import VectorLeft from '../../assets/Vector_Left.png'
 console.log('data', data);
 
 
-function Caroussel() {
-  const [logement, setLogement] = useState({ tags: [], equipments: [], pictures: [], rating: '', host: { 'name': '', 'picture': '' } })
-    const { id } = useParams()
-    
-    useEffect(() => {
-        data.map((house) => {
-            if (house.id === id) {
-                setLogement(house)
-            }
-            return null
-        })
-    }, [id])
+function Caroussel({logement}) { //props logement pour la reutiliser et simplifier le code (pas besoin de remettre useparams etc vu qu'il est dans la 
+                                 // fonction fiche logement)
 
 
 ////////////////////CURRENT-IMAGE////////////////////

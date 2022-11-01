@@ -73,3 +73,8 @@ main {
   transform: rotate(180deg);
   transition: 0.3s;
 }
+
+.column {
+  display: flex;
+  flex-direction: column !important;
+}

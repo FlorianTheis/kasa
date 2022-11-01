@@ -5,7 +5,7 @@ import '../../../src/styles/Accordion_Logements.css';
 
 
 
-function Accordion_logement({title, content}) {
+function Accordion_logement({title, content,}) {
  
  // Const pour initialisé le state, son état initial est "false", le "active" est false.
   const [active, setActive] = useState(false);
@@ -23,6 +23,7 @@ function Accordion_logement({title, content}) {
         <img src={Vector} alt="Vector logo" className="accordion__icone"></img>
       </div>
       <div className="accordion__content__logement">{content}</div>
+    
     </div>
     )
 }
