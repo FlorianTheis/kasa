@@ -11,8 +11,8 @@
   font-size: 24px;
   height: 15px;
   width: 500px;
-  margin-right: 76px;
-  margin-left: 76px;
+  margin-right: 95px;
+  margin-left: 95px;
 }
 
 .accordion__title:hover,
@@ -44,15 +44,13 @@
   transition: all 0.2s ease-in;
   margin-bottom: 10px;
   width: 500px;
-  margin-right: 76px;
-  margin-left: 76px;
+  margin-right: 95px;
+  margin-left: 95px;
 }
 
 .active .accordion__content__logement {
-  display: flex;
-  align-items: center;
   visibility: visible;
-  height: 249px;
+  height: 250px;
   overflow: visible;
   padding: 1rem;
   opacity: 1;

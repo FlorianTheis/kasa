@@ -1,11 +1,13 @@
 import '../styles/A_propos.css';
-import Banner_Apropos from './header/Banner_Apropos';
+import Banner_AP from '../assets/Banner_Apropos.png';
 import Accordion from './main/Accordion_Apropos';
 
 function A_propos() {
   return (
     <>
-      <Banner_Apropos />
+    <div className='a_propos_Kasa'>{}
+			<img src={Banner_AP} alt='Un paysage montagneux' className='img_apropos_Kasa' />
+		</div>
       <main className="accordions">
         <Accordion
           title="Fiabilité"

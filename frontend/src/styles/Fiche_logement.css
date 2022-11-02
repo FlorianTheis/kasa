@@ -4,6 +4,72 @@ justify-content: center;
 }
 
 .equipments {
-   
+   display: flex;
+   flex-direction: column;
    line-height: 0.5rem;
+}
+
+
+.infos__logement {
+   width: 1240px;
+   margin: 0 auto;
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.TLT {
+   width: 635px;
+}
+
+.TLT__title {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+color: #FF6060;
+margin: 0;
+}
+
+.TLT__location {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 142.6%;
+  margin: 0;
+  color: #FF6060;
+}
+
+
+.NPR {
+
+display: flex;
+
+}
+
+.NPR__name {
+   display: flex;
+   text-align: right;
+   width: 70px;
+   height: 52px;
+   font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+color: #FF6060;
+margin-right: 15px;
+}
+
+.NPR__picture {
+   width: 64px;
+height: 64px;
+border-radius: 100%;
+object-fit: cover;
+background-position: center;
+}
+
+.NPR__rating {
+   margin: 0;
 }
