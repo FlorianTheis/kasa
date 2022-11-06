@@ -1,7 +1,7 @@
 import data from '../../backend/data.json'; // importation du fichier data.json
 import React, { useEffect, useState } from 'react';
 import 'react-slideshow-image/dist/styles.css';
-import '../Caroussel/Caroussel.css';
+import './Caroussel.css';
 import VectorRight from '../../assets/Vector_Right.png';
 import VectorLeft from '../../assets/Vector_Left.png'
 

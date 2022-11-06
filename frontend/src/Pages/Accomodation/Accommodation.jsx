@@ -1,14 +1,14 @@
-import Accordion_logement from './Accordion/Accordion_Logement';
-import data from '../backend/data.json'; // importation du fichier data.json
-import '../styles/Fiche_logement.css';
-import Caroussel from './Caroussel/Caroussel';
+import AccordionAccommodation from '../../components/Accordion/AccordionAccommodation';
+import data from '../../backend/data.json'; // importation du fichier data.json
+import './Accommodation.css';
+import Caroussel from '../../components/Caroussel/Caroussel';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Tag from './Tag/Tag';
-import Error from '../components/Error/error';
-import Rate from '../components/Rating/Rate';
+import Tag from '../../components/Tag/Tag';
+import Error from '../Error/Error';
+import Rate from '../../components/Rating/Rate';
 
-function Fiche_Logement() {
+function Accommodation() {
   const [logement, setLogement] = useState({
     tags: [],
     equipments: [],
@@ -55,7 +55,7 @@ function Fiche_Logement() {
 
 
   return (
-    <body>
+    <div>
       <div>
         {' '}
         <Caroussel logement={logement} />
@@ -89,13 +89,13 @@ function Fiche_Logement() {
       </section>
 
       <div className="Accordion_Logement">
-        <Accordion_logement title="Description" content={description} />
-        <Accordion_logement title="Equipements" content={equipments_map} />
+        <AccordionAccommodation title="Description" content={description} />
+        <AccordionAccommodation title="Equipements" content={equipments_map} />
       </div>
-    </body>
+    </div>
   );
 }
-export default Fiche_Logement;
+export default Accommodation;
 
 // ce fichier permet d'importer tous les composants que l'on souhaite afficher sur la fiche logement.
 // const equipements sert a récupérer les données "équipement" du logement concerné , same pour description

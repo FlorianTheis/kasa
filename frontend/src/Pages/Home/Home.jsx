@@ -1,8 +1,8 @@
-import '../styles/Accueil.css';
-import Card from './main/Card';
-import Banner_AC from '../assets/Banner_Accueil.png';
+import './Home.css';
+import Card from '../../components/Card/Card';
+import Banner_AC from '../../assets/HomeBanner.png';
 
-function Accueil() {
+function Home() {
   return (
     <div>
       <div className="kasa-Body">
@@ -21,7 +21,7 @@ function Accueil() {
   );
 }
 
-export default Accueil;
+export default Home;
 
 // dans cette fonction accueil, importez tous les composants de la meme manère que "Banner" que l'on souhaite affiché sur la page d'accueil.
 // tout ce qu'on veut affiché sur la page d'accueil, importe le dans cette fonction

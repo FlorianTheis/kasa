@@ -1,4 +1,4 @@
-import '../Tag/Tag.css';
+import './Tag.css';
 import React, { useEffect, useState } from 'react';
 
 function Tag({ logement }) {

@@ -1,4 +1,4 @@
-import '../../../src/styles/Card.css';
+import './Card.css';
 import Logements from '../../backend/data.json'; // importation du fichier data.json
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ function Card() {
         <div className="section__cards">
           {Logements.map((l) => (
             <div className="card" key={l.id}>
-              <Link to={`/fiche_logement/${l.id}`}>
+              <Link to={`/Accommodation/${l.id}`}>
                 <p className="card__title">{l.title}</p>
                 <img className="card__pictures" src={l.cover} alt="" />
               </Link>

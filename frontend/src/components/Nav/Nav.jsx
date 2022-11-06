@@ -1,19 +1,19 @@
-import '../../../src/styles/Navbar.css';
+import './Nav.css';
 import { Link } from 'react-router-dom';
 import A from '../../assets/A.png';
 import home from '../../assets/home.png';
 import K from '../../assets/K.png';
 import S from '../../assets/S.png';
-import Porte from '../../assets/Porte_home.png';
+import Door from '../../assets/DoorHome.png';
 
-function Navbar() {
+function Nav() {
   return (
     <nav>
       <div className='header__nav'>
         <div>
           <img src={K} alt="lettre K" className='header__K'></img>
           <img src={home} alt="maison logo" className='header__home '></img>
-          <img src={Porte} alt="porte logo" className='header__porte '></img>
+          <img src={Door} alt="porte logo" className='header__porte '></img>
           <img src={S} alt="lettre S" className='header__S'></img>
           <img src={A} alt="lettre A" className='header__A'></img>
         </div>
@@ -26,4 +26,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Nav;

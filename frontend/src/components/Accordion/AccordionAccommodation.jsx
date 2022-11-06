@@ -1,11 +1,13 @@
-import '../../../src/styles/Accordion_Apropos.css';
 import { useState } from 'react';
 import React from 'react';
 import Vector from '../../assets/Vector.png';
+import './AccordionAccommodation.css'
 
-// Composant accordion avec comme paramètre le title et le content qu'on a mis dans Apropos.jsx (<Accordion title="" content="" />).
-function Accordion({ title, content }) {
-  // Const pour initialisé le state, son état initial est "false", le "active" est false.
+
+
+function AccordionAccommodation({title, content,}) {
+ 
+ // Const pour initialisé le state, son état initial est "false", le "active" est false.
   const [active, setActive] = useState(false);
   // Fonction fléché handleToggle, lorsqu'on va cliquer, on va faire un setActive (!active)
 
@@ -15,14 +17,15 @@ function Accordion({ title, content }) {
   };
   return (
     // Si active est true alors on met la class active.
-    <div className={`accordion ${active && 'active'}`}>
-      <div className="accordion__title" onClick={handleToggle}>
+    <div className={`accordionL ${active && 'active'}`}>
+      <div className="accordion__title__logement" onClick={handleToggle}>
         {title}{' '}
         <img src={Vector} alt="Vector logo" className="accordion__icone"></img>
       </div>
-      <div className="accordion__content">{content}</div>
+      <div className="accordion__content__logement">{content}</div>
+    
     </div>
-  );
+    )
 }
 
-export default Accordion;
+export default AccordionAccommodation;
