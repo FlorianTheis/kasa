@@ -10,7 +10,7 @@ function Nav() {
   return (
     <nav>
       <div className='header__nav'>
-        <div>
+        <div className='header__logo'>
           <img src={K} alt="lettre K" className='header__K'></img>
           <img src={home} alt="maison logo" className='header__home '></img>
           <img src={Door} alt="porte logo" className='header__porte '></img>

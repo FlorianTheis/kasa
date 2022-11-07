@@ -1,17 +1,50 @@
 .accordions {
-  width: 1028px;
+  max-width: 1028px;
   margin-top: 50px;
 }
 
 .img_about_Kasa {
+ 
   border-radius: 25px;
   margin-bottom: 30px;
   margin-top: 38px;
-  max-width: 1240px;
+  width: 100%;
+  height: 223px;
+ 
 }
 .AboutKasa {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  margin: auto;
   object-fit: cover;
+ max-width: 1240px;
+ 
+}
+
+@media (max-width: 992px) {
+  .header__nav {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .accordions {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .AboutKasa {
+    margin-right: 50px;
+    margin-left: 50px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1250px) {
+  .header__nav {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .AboutKasa {
+    margin-right: 50px;
+    margin-left: 50px;
+    object-fit: cover;
+  }
 }

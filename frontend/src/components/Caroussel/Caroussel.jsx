@@ -1,4 +1,4 @@
-import data from '../../backend/data.json'; // importation du fichier data.json
+import data from '../../Data/data.json'; // importation du fichier data.json
 import React, { useEffect, useState } from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import './Caroussel.css';

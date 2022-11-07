@@ -1,13 +1,17 @@
 .kasa-Body {
-	width: 1240px;
-    margin: 0 auto;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section__p {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 1240px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .section__p p {

@@ -1,5 +1,5 @@
 import AccordionAccommodation from '../../components/Accordion/AccordionAccommodation';
-import data from '../../backend/data.json'; // importation du fichier data.json
+import data from '../../Data/data.json'; // importation du fichier data.json
 import './Accommodation.css';
 import Caroussel from '../../components/Caroussel/Caroussel';
 import React, { useEffect, useState } from 'react';

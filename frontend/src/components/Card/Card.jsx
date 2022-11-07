@@ -1,5 +1,5 @@
 import './Card.css';
-import Logements from '../../backend/data.json'; // importation du fichier data.json
+import Logements from '../../Data/data.json'; // importation du fichier data.json
 import { Link } from 'react-router-dom';
 
 function Card() {

@@ -2,10 +2,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1240px;
-  margin: 0 auto;
   font-family: 'Montserrat';
 margin-top: 50px;
+
 }
 
 .header__home {
@@ -59,4 +58,11 @@ color: #FF6060;
 
 .navBar__Apropos:hover {
   border-bottom: 2px solid #FF6060;
+}
+
+nav {
+  max-width: 1240px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin: 0 auto;
 }
