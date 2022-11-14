@@ -34,3 +34,9 @@ footer {
   height: 100%;  
   
 }
+
+@media (max-width: 767px) {
+  .Footer__p {
+    font-size: 15px;
+  }
+}

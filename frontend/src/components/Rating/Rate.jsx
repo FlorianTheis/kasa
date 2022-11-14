@@ -1,12 +1,13 @@
 import React from "react";
 import Star from '../../assets/Star.png'
 import StarEmpty from '../../assets/StarEmpty.png';
+import './Rate.css'
 
 function Rate({ logement }) {
 const ratingScore = [1, 2, 3, 4, 5];
 
 return (
-    <div>
+    <div className="flex">
             {ratingScore.map((ratingElem) =>
                 logement >= ratingElem ? (
 

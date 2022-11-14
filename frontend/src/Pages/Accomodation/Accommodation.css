@@ -96,9 +96,7 @@ background-position: center;
       width: 90%;
    }
    
-   .TLT {
-      width: 635px;
-   }
+   
    
    .TLT__title {
    font-family: 'Montserrat';
@@ -150,4 +148,43 @@ background-position: center;
    
    .NPR__rating {
       margin: 0;
+   }
+
+   @media (max-width: 767px) {
+      .TLT__title {
+         font-size: 18px;
+      }
+
+      .TLT__location {
+         font-size: 14px;
+      }
+
+.infos__logement {
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.resp {
+   display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NPR {
+   display: flex;
+   align-items: center;
+}
+
+.NPR__picture {
+   width: 32px;
+height: 32px;}
+
+.NPR__name {
+   font-size: 12px;
+   align-items: center;
+   width: 30px;
+}
+
    }

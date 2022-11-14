@@ -72,7 +72,7 @@ function Accommodation() {
           </h3>
         </div>
         {/* NPR pour 'name_picture_ratings' */}
-        <div>
+        <div className='resp'>
           <div className="NPR">
             <h1 className="NPR__name">{hostName}</h1>
             <img
