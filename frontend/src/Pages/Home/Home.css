@@ -1,4 +1,4 @@
-.kasa-Body {
+/* .kasa-Body {
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
@@ -28,4 +28,35 @@
     background-size: cover;
     background-color: #0000004d;
     background-blend-mode: darken;
+} */
+
+.kasa-Body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+
+.section__p p {
+    color: white;
+    font-size: 38px;
+    display: flex;
+    width: 90vw;
+    height: 220px;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-size: cover;
+    background-color: #0000004d;
+    background-blend-mode: darken;
+    max-width: 1240px;
+}
+
+@media (max-width: 767px) {
+
+    .section__p p {
+        border-radius: 10px;
+    }
 }

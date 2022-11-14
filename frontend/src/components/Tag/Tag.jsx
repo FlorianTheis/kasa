@@ -1,5 +1,4 @@
 import './Tag.css';
-import React, { useEffect, useState } from 'react';
 
 function Tag({ logement }) {
   // props logement pour pas copié le code de UseParams etc qui se trouve sur la fiche-logement.
