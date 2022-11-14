@@ -18,8 +18,8 @@ function Nav() {
           <img src={A} alt="lettre A" className='header__A'></img>
         </div>
         <div className="navBar">
-          <Link to="/" className='navBar__accueil '>Accueil</Link>
-          <Link to="/Apropos" className='navBar__Apropos'>A Propos</Link>
+          <Link to="/" className='navHome '>Accueil</Link>
+          <Link to="/Apropos" className='navAbout'>A Propos</Link>
         </div>
       </div>
     </nav>

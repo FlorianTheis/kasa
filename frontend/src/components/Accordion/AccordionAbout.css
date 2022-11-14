@@ -43,7 +43,7 @@
     overflow: hidden;
     padding: 0 1rem;
     transition: all .2s ease-in;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .active .accordion__content {

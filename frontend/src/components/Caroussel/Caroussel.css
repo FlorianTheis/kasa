@@ -35,4 +35,43 @@
     height: 415px;
     width: 1240px;
     object-fit: cover;
+   
+}
+
+.slide__number {
+    display: flex;
+    justify-content: center;
+color: #FFFFFF;
+font-family: 'Montserrat';
+    margin-top: -40px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 799px){
+
+    
+   .active .imageOfSlider {
+        width: 100%;
+        height: 225px;
+        border-radius: 10px;
+        background-position: center;
+        object-fit: cover;
+        background-size: cover;
+    }
+
+    .slider {
+        height: 100%;
+       
+    }
+
+    .slider .active {
+        height: 100%;
+    }
+
+    .slideNumber {
+        margin-top: 200px;
+    }
+
 }

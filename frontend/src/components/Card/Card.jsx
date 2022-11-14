@@ -8,12 +8,22 @@ function Card() {
       <section className="Gallery">
         <div className="section__cards">
           {Logements.map((l) => (
+            <Link to={`/Accommodation/${l.id}`}>
             <div className="card" key={l.id}>
-              <Link to={`/Accommodation/${l.id}`}>
-                <p className="card__title">{l.title}</p>
-                <img className="card__pictures" src={l.cover} alt="" />
-              </Link>
+              
+                <div
+                  className="card__pictures"
+                  style={{
+                    backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), 
+                            url(${l.cover})`,
+                  }}
+                >
+                  <p className="card__title">{l.title}</p>
+                </div>
             </div>
+                </Link>
+            
+            
           ))}
         </div>
       </section>

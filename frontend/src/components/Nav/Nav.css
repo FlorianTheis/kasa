@@ -31,8 +31,8 @@ margin-top: 50px;
   bottom: 25%;
 }
 
-.navBar__accueil {
-   color: #FF6060;
+.navHome {
+  color: #FF6060;
   text-decoration: none;
   margin-right: 57px;
   
@@ -42,21 +42,17 @@ margin-top: 50px;
   line-height: 142.6%;
 }
 
-.navBar__Apropos {
+.navAbout {
 color: #FF6060;
   text-decoration: none;
-  
-  font-style: normal;
-  font-weight: 500;
   font-size: 24px;
-  line-height: 142.6%;
 }
 
-.navBar__accueil:hover {
+.navHome:hover {
   border-bottom: 2px solid #FF6060;
 }
 
-.navBar__Apropos:hover {
+.navAbout:hover {
   border-bottom: 2px solid #FF6060;
 }
 
