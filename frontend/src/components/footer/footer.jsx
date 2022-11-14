@@ -12,6 +12,6 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer; 
 
 // Ce fichier est composé du footer de notre site

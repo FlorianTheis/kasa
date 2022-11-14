@@ -2,7 +2,7 @@ import Home from './Pages/Home/Home' // import de la page d'accueil
 import About from './Pages/About/About'; // page A Propos
 import Nav from './components/Nav/Nav'; // de la navigation
 import Error from './Pages/Error/Error'; // de la page d'erreur
-import Footer from './components/Footer/Footer'; // du footer 
+import Footer from './components/footer/Footer'; // du footer  
 
 import { Routes, Route } from 'react-router-dom';
 import Accommodation from './Pages/Accomodation/Accommodation';
