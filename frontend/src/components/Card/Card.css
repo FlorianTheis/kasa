@@ -81,7 +81,7 @@ main {
   }
 
   .card__pictures {
-    /* height: 300px; */
+     height: 300px; 
   }
 
   .Gallery{
@@ -101,13 +101,13 @@ main {
   }
 
   .card {
-    
+    width: 100%;
     margin: 5%;
   }
 
   .card__pictures {
-    
-    
+    height: auto;
+    width: 90%;
   }
 
   .Gallery {
