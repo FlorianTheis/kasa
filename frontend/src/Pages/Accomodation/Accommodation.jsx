@@ -43,7 +43,7 @@ function Accommodation() {
   const logementEquipments = logement.equipments;
   // on crée une constante ou on va effectuer un .map pour récupérer les élements equipments (seulement ceux besoin si 3, juste 3 et pas 20 (3+17lignes vides))
   const equipments_map = logementEquipments.map((e, index) => (
-    <p className="equipments">{logement.equipments[index]}</p>
+    <p key={e} className="equipments">{logement.equipments[index]}</p>
   ));
 
   //on crée une constante pour récupérer les host (nom prénom) du logement actuel qu'on introduit ensuite dans le return plus bas ( {hostName} )

@@ -6,10 +6,10 @@ function Card() {
   return (
     <main>
       <section className="Gallery">
-        <div className="section__cards">
+        <div className="section__cards" >
           {Logements.map((l) => (
-            <Link to={`/Accommodation/${l.id}`}>
-            <div className="card" key={l.id}>
+            <Link key={l.id} to={`/Accommodation/${l.id}`}>
+            <div className="card" >
               
                 <div
                   className="card__pictures"
