@@ -69,3 +69,14 @@
     transform:rotate(180deg);
     transition: 0.3s;
 }
+
+@media (max-width: 767px) {
+    .active .accordion__content {
+        font-size: 14px;
+    }
+
+    .accordion__title {
+        height: 4px;
+        font-size: 14px;
+    }
+}

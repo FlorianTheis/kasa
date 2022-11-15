@@ -58,5 +58,6 @@
 
     .section__p p {
         border-radius: 10px;
+        font-size: 25px;
     }
 }

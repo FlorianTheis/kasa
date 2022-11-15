@@ -1,12 +1,12 @@
 import './About.css';
-import Banner_AP from '../../assets/AboutBanner.png';
 import AccordionAbout from '../../components/Accordion/AccordionAbout';
+
 
 function About() {
   return (
     <>
     <div className='AboutKasa'>{}
-			<img src={Banner_AP} alt='Un paysage montagneux' className='img_about_Kasa' />
+			<div className='img_about_Kasa' />
 		</div>
       <main className="accordions">
         <AccordionAbout

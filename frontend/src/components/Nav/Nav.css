@@ -7,21 +7,8 @@ margin-top: 50px;
 
 }
 
-.header__home {
-  margin-left: 5px;
-}
-
-.header__S {
-  margin-left: 15px;
-}
-
-.header__A {
-  margin-left: 5px;
-}
-
-.header__porte {
-  margin-left: -15px;
-  margin-bottom: 5px;
+.header__Kasa {
+  color: #FF6060;
 }
 
 .navBar {
@@ -61,4 +48,31 @@ nav {
   margin-left: 100px;
   margin-right: 100px;
   margin: 0 auto;
+}
+
+@media (max-width: 767px) {
+.header__Kasa {
+  width: 100px;
+}
+
+.header__nav {
+  margin-left: 40px;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.navHome {
+  font-size: 14px;
+  margin-right: 26px;
+  margin-left: 30px;
+}
+.navAbout {
+  width: 65px;
+  font-size: 14px;
+}
 }

@@ -11,10 +11,10 @@ return (
             {ratingScore.map((ratingElem) =>
                 logement >= ratingElem ? (
 
-                    <img src={Star} key={ratingElem.toString()} alt='étoile rempli' />
+                    <img src={Star} className="stars" key={ratingElem.toString()} alt='étoile rempli' />
                 ) : (
 
-                    <img src={StarEmpty} key={ratingElem.toString()} alt='étoile vide' />
+                    <img src={StarEmpty} className="stars" key={ratingElem.toString()} alt='étoile vide' />
                 )
             )}
         </div>

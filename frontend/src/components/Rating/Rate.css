@@ -1,9 +1,11 @@
 .flex {
     display: flex;
 }
-
+.stars {
+    margin: 2px;
+}
 @media (max-width: 767px) {
     .flex {
-       height: 18px;
+       height: 25px;
     }
 }
