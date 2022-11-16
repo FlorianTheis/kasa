@@ -1,12 +1,10 @@
 
-import data from '../../Data/data.json'; // importation du fichier data.json
 import React, { useState } from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import './Caroussel.css';
 import 'react-slideshow-image/dist/styles.css';
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-console.log('data', data);
 
 function Caroussel({ logement }) {
   //props logement pour la reutiliser et simplifier le code (pas besoin de remettre useparams etc vu qu'il est dans la
@@ -25,11 +23,6 @@ function Caroussel({ logement }) {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
 
-  if (logement.pictures.length <= 0) {
-    return null;
-  }
-
-  console.log(current);
 
   ////////////////////RETURN////////////////////
 
