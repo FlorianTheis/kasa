@@ -13,7 +13,7 @@ function Nav() {
         </div>
         <div className="navBar">
           <Link to="/" className='navHome '>Accueil</Link>
-          <Link to="/Apropos" className='navAbout'>A Propos</Link>
+          <Link to="/About" className='navAbout'>A Propos</Link>
         </div>
       </div>
     </nav>

@@ -14,7 +14,7 @@ function App() {
 
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/Apropos" element={<About />} />
+        <Route path="/About" element={<About />} />
         <Route path="*" element={<Error />} />
         <Route path="/Accommodation/:id" element={<Accommodation />}
         />
@@ -27,7 +27,6 @@ function App() {
 
 export default App;
 
-//<Footer />
 
 // l'étoile sur la route Error signifie nimporte quel route, si je tape /fff par exemple je retombe sur l'erreur 404
 
